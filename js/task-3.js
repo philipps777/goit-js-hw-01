@@ -1,11 +1,11 @@
 function getElementWidth(content, padding, border) {
-  return `Загальна ширинa елемента ${
+  return (
     Number.parseFloat(content) +
     Number.parseFloat(padding) +
     Number.parseFloat(padding) +
     Number.parseFloat(border) +
     Number.parseFloat(border)
-  } пікселів`;
+  );
 }
 
 console.log(getElementWidth('50px', '8px', '4px')); // 74
